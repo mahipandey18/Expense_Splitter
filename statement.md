@@ -1,42 +1,51 @@
-# Project Statement - Expense_Splitter
-## 1. Project Title
-Expense Splitter - Java Console Application
+# Project Statement - Expense Splitter
 
-## 2. Objective
-To develop a simple and efficient system to record shared expenses among a group of friends, split them equally, maintain balances and allow settlement using basic Java and OOP concepts.
+## 1. Problem Statement
+Managing shared expenses within a group of friends often becomes confusing, especially when different people pay at different times. Manual calculations lead to errors, disputes, and a lack of clarity about who owes whom. Therefore, an automated system is needed to track contributions, split expenses fairly and maintain an accurate running balance for every group member.
 
-## 3. Problem Description
-Managing shared expenses in groups often becomes confusing, especially when multiple people pay at different times. Manual calculations lead to errors and misunderstandings about who owes whom. A simple automated system is needed to track contributions and balance amounts accurately.
+## 2. Scope of the Project
+The scope of this project includes the development of a console-based Java application capable of:
+- Adding and storing friend names
+- Recording expenses and distributing them equally
+- Maintaining individual balances
+- Displaying summary reports
+- Allowing settlement of dues
+- Providing persistent storage using file handling
 
-## 4. Proposed Solution
-The system allows users to:
-* Add friends
-* Add expenses
-* Auto-split expenses
-* View summary
-* Settle balances
-* Save & load data  
-The project is modular, easy to extend and follows OOP best practices.
+### Out of Scope:
+- Graphical user interface (GUI)
+- Cloud/online synchronization
+- Complex settlement algorithms
+- Multi-user concurrency handling
 
-## 5. Modules
-1. Friend Module - stores friend's name and balance
-2. Expense Module - represents an individual expense
-3. Expense Manager Module - core logic of splitting and updating balances
-4. Validator Module - ensures valid input
-5. File Handler Module - saves and loads data
-6. Main Module - user interface
+## 3. Target Users
+The application is intended for:  
+- Students sharing hostel or food expenses
+- Friends on trips or outings
+- Roommates sharing rent, groceries, or utilities
+- Small groups needing a simple offline expense management system  
+Anyone who needs a lightweight and intuitive expense splitter can benefit from using this tool.
 
-## 6. Tools & Technologies
-* Java (Core)
-* OOP
-* Collections (ArrayList)
-* File I/O (BufferedReader, BufferedWriter)
+## 4. High-Level Features
+### Add Friends
+Allows the creation of friend profiles with name and balance fields.
 
-## 7. Outcome
-* Simplifies shared expense management
-* Ensures fairness in splitting
-* Stores data persistently
-* Demonstrates knowledge of multi-class Java programming
+### Add & Split Expenses
+Users can add an expense paid by any friend. The amount is automatically split among all members.
 
-## 8. Conclusion
-This project successfully meets its objectives by delivering a straightforward and reliable expense management system. It showcases the use of Java OOP principles, collections and file handling while solving a real-world problem with a simple console application.
+### Automatic Balance Updates
+Balances are updated based on contributions:
+- Positive balance → amount to receive  
+- Negative balance → amount owed  
+
+### Summary View
+Displays all friends’ balances clearly for quick understanding.
+
+### Settlement
+Users can settle an individual's balance by resetting it to zero.
+
+### Data Persistence
+All friend data is saved and loaded automatically using a text file (`expenses_data.txt`).
+
+### Input Validation
+Ensures name format and amount validity to prevent incorrect data entry. 
