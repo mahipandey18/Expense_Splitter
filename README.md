@@ -30,4 +30,4 @@ java Main
 ```
 
 ## Author
-Mahi Pandey | Btech CSE |
+Mahi Pandey | Btech CSE
