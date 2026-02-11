@@ -7,13 +7,13 @@ Users can add friends, record expenses, auto-split costs equally, and view who o
 All data is validated and stored using file handling for persistence.
 
 ## Features
-✔ Add friends  
-✔ Add expenses and auto-split equally  
-✔ Show each friend's balance  
-✔ Settle up individual balances  
-✔ Validate names and amounts  
-✔ Save and load data using file handling  
-✔ Modular project with multiple classes  
+- Add friends  
+- Add expenses and auto-split equally  
+- Show each friend's balance  
+- Settle up individual balances  
+- Validate names and amounts  
+- Save and load data using file handling  
+- Modular project with multiple classes  
 
 ## How It Works
 1. Add Friend - Stores the friend’s name in the system.  
